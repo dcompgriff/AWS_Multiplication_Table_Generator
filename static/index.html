@@ -3,16 +3,18 @@
 <head>
 	<title>Multiplication Table App</title>
 	<link rel="stylesheet" type="text/css" href="multiplication_table_styles.css">
+	
 </head>
 <body>
 
 <h1>Multiplication Tables</h1>
 <div id="middle_column">
-	<p>Enter a number to generate a multiplication table for.</p>
+	<p>This app will generate a 1-10 multiplication table for any entered multiplicand, up to 30. Enter a number to generate a multiplication table.</p>
 	<form>
 		Multiplicand:<br/>
-		<input type="text" name="multiplicand_input">
-		<input type="submit" value="Generate" name="multiplicand_submit">
+		<input type="text" name="multiplicand_input" id="multiplicand_input">
+		<input type="button" value="Generate" name="multiplication_table_generate" id="multiplication_table_generate">
+		<input type="button" value="Clear" name="multiplication_table_clear" id="multiplication_table_clear">
 	</form>
 	<div id="multiplication_table_display">
 		<table class="multiplication_table">
@@ -38,6 +40,11 @@
 <div id="right_column">
 	
 </div>
+
+<!-- Import the jquery code from a contend delivery provider link. -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- Import my jquery javascript files for the web page. -->
+<script src="multiplication_table_code.js"></script>
 
 </body>
 </html>
