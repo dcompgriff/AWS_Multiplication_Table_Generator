@@ -14,7 +14,7 @@ $(document).ready(function(){
 	function buildTable(htmlBaseElement, range){
 
 		var currentTableId = "table0";
-		var currentTable = $('<table class="multiplication_table"></table>');
+		var currentTable = $('<table class="table-hover multiplication_table"></table>');
 		//Loop through and create the table.
 		for(var row = 1; row<=range; row++){
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
 				//Add the table to the web-page, and create 
 				// a new base table to fill. 
 				$(htmlBaseElement).append(currentTable);
-				currentTable = $('<table class="multiplication_table"></table>');
+				currentTable = $('<table class="table-hover multiplication_table"></table>');
 			}
 		}
 

@@ -2,24 +2,28 @@
 <html>
 <head>
 	<title>Multiplication Table App</title>
+	<!-- Bootstrap latest compiled and minified CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="multiplication_table_styles.css">
 	
 </head>
 <body>
 
-<h1>Multiplication Tables</h1>
+<h1 class="navbar navbar-default" style="font-family: Comic Sans MS">Multiplication Tables</h1>
 <div id="middle_column">
-	<p>This app will generate a 1-10 multiplication table for any entered multiplicand, up to 500. Enter a number to generate a multiplication table.</p>
-	<form>
-		Multiplicand:<br/>
-		<input type="text" name="multiplicand_input" id="multiplicand_input">
-		<input type="button" value="Generate" name="multiplication_table_generate" id="multiplication_table_generate">
-		<input type="button" value="Clear" name="multiplication_table_clear" id="multiplication_table_clear">
-	</form>
+	<div class="well">
+		<p>This app will generate a 1-10 multiplication table for any entered multiplicand, up to 500. Enter a number to generate a multiplication table.</p>
+		<form>
+			Multiplicand:<br/>
+			<input type="text" name="multiplicand_input" id="multiplicand_input">
+			<input type="button" value="Generate" name="multiplication_table_generate" class="btn btn-primary" id="multiplication_table_generate">
+			<input type="button" value="Clear" name="multiplication_table_clear" class="btn btn-primary" id="multiplication_table_clear">
+		</form>
+	</div>
 	<div id="multiplication_table_display">
-		<table class="multiplication_table">
+		<table class="table-hover multiplication_table">
 			<tr>
-				<td>entry 1</td>
+				<td>entry 10</td>
 				<td>entry 2</td>
 				<td>entry 3</td>
 				<td>entry 4</td>
@@ -64,8 +68,10 @@
 
 <!-- Import the jquery code from a contend delivery provider link. -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- Bootstrap latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 <!-- Import my jquery javascript files for the web page. -->
 <script src="multiplication_table_code.js"></script>
-
 </body>
 </html>
