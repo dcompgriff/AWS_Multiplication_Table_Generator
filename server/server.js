@@ -9,7 +9,7 @@ var app = express();
 app.use('/', express.static('../static'), express.static('../frontend'));
 
 //Create the http server.
-http.createServer(app).listen(8080);
+http.createServer(app).listen(80);
 
 //Log status on the console. 
 console.log('Server running!');
